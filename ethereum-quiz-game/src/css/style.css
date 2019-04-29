@@ -1,0 +1,303 @@
+:root {
+   --main-col: #0863B2;
+}
+
+body {
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   background: var(--main-col);
+   overflow-x: hidden;
+}
+
+.nav {
+   width: 100vw;
+   height: 80px;
+   background: var(--main-col);
+   box-shadow: 0 0 20px #0008;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+}
+
+.navIcon {
+   font-size: 40px;
+   color: #FFF;
+   position: absolute;
+   top: 50%;
+   right: 60px;
+   transform: translate(0, -50%);
+}
+
+ion-icon {
+   cursor: pointer;
+   float: left;
+   margin: 0 30px:
+}
+
+.spacer {
+   width: 30px;
+   height: 30px;
+   float: left;
+}
+
+#appendPoint {
+   position: fixed;
+   top: 110px;
+   right: 60px;
+   z-index: 10;
+}
+
+.modal {
+   width: 400px;
+   background: #FFF;
+   display: inline-block;
+}
+
+#centeracc {
+   text-align: center;
+   font-family: Arial, sans-serif;
+}
+
+.main {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.page {
+   width: 100vw;
+   height: 100vh;
+   float: left;
+   clear: both;
+}
+
+#start {background: #000;}
+
+h1 {
+   text-align: center;
+   font-size: 60px;
+   font-family: Arial, sans-serif;
+   text-transform: uppercase;
+   margin: 0;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #FFF;
+}
+
+h2 {
+   text-align: center;
+   font-size: 40px;
+   font-family: Arial, sans-serif;
+   color: #888;
+   text-transform: uppercase;
+}
+
+h3 {
+   text-align: center;
+   font-size: 20px;
+   font-family: Arial, sans-serif;
+   color: #888;
+   text-transform: uppercase;
+}
+
+h4 {
+   font-size: 20px;
+   font-family: Arial, sans-serif;
+   color: #444;
+}
+
+#title {
+   color: var(--main-col);
+   font-size: 100px;
+}
+
+#stroke {
+   color: #000;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: var(--main-col);
+}
+
+.container {
+   width: 600px;
+   padding: 20px;
+   background: #FFF;
+   box-shadow: 0 10px 20px #0008;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: inline-block;
+}
+
+.panel form {
+   float: left;
+   clear: both;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+   display: inline-block;
+}
+
+.panel input {
+   float: left;
+   clear: both;
+   margin: 5px;
+   padding: 5px;
+   display: inline-block;
+   border: none;
+   background: #CCC;
+}
+
+.panel input:focus {background: #EEE;}
+
+.sub {
+   border: none;
+   background: var(--main-col);
+   color: #FFF;
+   padding: 5px 10px;
+   float: left;
+   clear: both;
+   margin: 5px;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+.flexbox {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-flow: row;
+}
+
+.flexOpt {
+   flex: 1;
+   transition: all 250ms ease-in-out;
+   overflow: hidden;
+}
+
+.flexOpt:hover {
+   flex: 2;
+}
+
+.unselect {background: #0008;}
+.unselect:hover {background: #0005;}
+
+.section {
+   width: 100%;
+   height: 100vh;
+   float: left;
+   clear: both;
+}
+
+.rot {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transition: all 250ms ease-in-out;
+}
+
+.section {
+   transition: all 500ms ease-in-out;
+}
+
+#numQ {
+   text-align: center;
+   font-size: 20px;
+   font-family: Arial, sans-serif;
+}
+
+.quizCard {
+   width: calc(100% - 20px);
+   padding: 10px;
+   background: #CCC;
+   float: left;
+   clear: both;
+   margin-top: 5px;
+   cursor: pointer;
+}
+
+.quizCard p:first-child {
+   font-size: 25px;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+   color: #333;
+}
+
+.quizCard p:not(:first-child) {
+   font-size: 20px;
+   font-family: Arial, sans-serif;
+   color: #000;
+}
+
+.choices {
+   width: calc(100% - 20px);
+   padding: 10px;
+   background: #CCC;
+}
+
+.anschoice {
+   width: calc(100% - 40px);
+   padding: 20px;
+   background: #888;
+   margin-top: 5px;
+   cursor: pointer;
+   font-family: Arial, sans-serif;
+   color: #FFF;
+}
+
+.picked {
+   background: var(--main-col);
+}
+
+#subQuiz {
+   border: none;
+   background: var(--main-col);
+   padding: 10px 20px;
+   position: relative;
+   top: 10px;
+   left: 50%;
+   transform: translate(-50%);
+   cursor: pointer;
+}
+
+.yn {
+   position: relative;
+   top: 30px;
+   left: 50%;
+   transform: translate(-50%);
+   margin-bottom: 40px;
+   display: inline-block;
+}
+
+.yn button {
+   border: none;
+   padding: 10px 20px;
+   color: #FFF;
+   margin: 0 10px;
+   cursor: pointer;
+}
+
+#choiceyes {background: #31D837;}
+#choiceno {background: #F44242;}
+
+.moveon {
+   position: absolute;
+   bottom: 60px;
+   right: 60px;
+}
+
+#alreadyPaid {
+   font-size: 40px;
+   color: #FFF;
+}
+
+#tqcon {
+   transition: all 500ms ease-in-out;
+   margin-top: 0vh;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Ethereum Quiz Game</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+      <script src="js/web3.min.js" charset="utf-8"></script>
+   </head>
+   <body>
+      <div class="nav">
+         <div class="navIcon">
+            <ion-icon name="paper" id="addConn"></ion-icon>
+            <span class="spacer"></span>
+            <ion-icon name="contact" id="acc"></ion-icon>
+         </div>
+
+      </div>
+
+      <div id="appendPoint">
+         <!-- This acts as a container for modals -->
+      </div>
+
+      <div class="main">
+         <div class="page" id="start">
+               <h1 id="title">Ethereum<br><span id="stroke">Quiz Game</span></h1>
+         </div>
+
+         <div class="page">
+            <div class="flexbox">
+               <div class="flexOpt unselect" id="mq">
+                  <div class="section" id="mqfirst">
+                     <div class="rot" id="mqrot">
+                        <h1>Make A Quiz</h1>
+                     </div>
+                  </div>
+                  <div class="section" id="mqsecond">
+                     <div class="container">
+                        <div class="panel">
+                           <h2>Make a Quiz</h2>
+                           <form>
+                              <input type="text" id="qName" placeholder="Quiz Name">
+                              <input type="number" id="qFee" placeholder="Entrance Fee (ETH)" min="0">
+                              <input type="number" id="qPool" placeholder="Initial Pool (ETH)" min="0">
+                              <input type="text" id="qQuestion" placeholder="Question">
+                              <input type="text" id="qCorrect" placeholder="Correct Answer">
+                              <input type="text" id="qWrong1" placeholder="Wrong Answer">
+                              <input type="text" id="qWrong2" placeholder="Wrong Answer">
+                              <input type="text" id="qWrong3" placeholder="Wrong Answer">
+                           </form>
+                           <button type="button" name="button" class="sub" id="makeQuiz">Make Quiz</button>
+                        </div>
+                        <span id="result"></span>
+                     </div>
+                  </div>
+                  <div class="section" id="mqthird">
+                     <div class="container">
+                        <div class="panel" id="makeQuizStatus">
+                           <h3>Please Confirm in MetaMask</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="flexOpt unselect" id="tq">
+                  <div class="section" id="tqfirst">
+                     <div class="rot" id="tqrot">
+                        <h1>Take A Quiz</h1>
+                     </div>
+                  </div>
+                  <div class="section" id="tqsecond">
+                     <div class="container">
+                        <div class="panel" id="quizLoad">
+                           <h2>Quizzes</h2>
+                           <span id="numQ"></p></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section" id="tqthird">
+                     <div class="container">
+                        <div class="panel" id="loadFee">
+                           <h3>ERROR</h3>
+                        </div>
+                     </div>
+                     <div class="moveon">
+
+                     </div>
+                  </div>
+                  <div class="section" id="tqfourth">
+                     <div class="container">
+                        <div class="panel" id="loadQ">
+                           <h3>ERROR</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <div class="container">
+                        <div class="panel" id="score">
+                           <h3>ERROR</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <script src="js/script.js" charset="utf-8"></script>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+   </body>
+</html>
